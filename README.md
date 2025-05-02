@@ -2,5 +2,5 @@
 
 - Contemporary art writer, organizer, and educator
 - Championing artists, communities, and students
-- CV
+- [CV](pages/cv.md)
 - Contact Me
