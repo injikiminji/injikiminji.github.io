@@ -1,0 +1,145 @@
+/* Subdued minimalist palette */
+:root {
+  --bg: #ffffff;
+  --text: color: rgb(16, 16, 16);
+  --link: color: rgb(16, 16, 16);
+  --border: #e5e5e5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Neue Haas Unica", Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffffaa;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #646464;
+}
+
+.container {
+  max-width: 780px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+article.card {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+article.card:last-child { border-bottom: none; }
+
+article.card h2 {
+  margin: 0 0 .25rem 0;
+  font-size: 1.25rem;
+}
+
+article.card p.preview {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #777;
+  font-size: .875rem;
+}
+
+strong,
+b,
+h1, h2, h3, h4, h5, h6,
+nav a {
+  font-weight: 400;   /* try 500 for even lighter */
+  letter-spacing: normal;
+  font-feature-settings: "pnum";      /* proportional numerals */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* optional: give headings a touch more letter‑spacing for elegance */
+h1, h2, h3 {
+  letter-spacing: 0.02em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  /* optional: darken subtly on hover for accessibility */
+  color: #777777;
+}
+
+/* --- profile layout ------------------------------------------------------ */
+.profile {
+  display: flex;
+  gap: 2rem;
+  align-items: top;     /* keep tops aligned */
+}
+
+.headshot {
+  width: 260px;                /* bigger — tweak as needed */
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* responsive stack on small screens */
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .headshot {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.profile p {
+  font-family: "Neue Haas Unica", Helvetica, sans-serif;
+  font-feature-settings: "pnum";
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: 100%;
+  line-height: 26px;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  color: rgb(16, 16, 16);
+  margin: 0 0 20px 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
