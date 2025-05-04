@@ -34,7 +34,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: #646464;
+  color: #c54f4f;
 }
 
 .container {
@@ -91,7 +91,7 @@ a {
 a:hover,
 a:focus {
   /* optional: darken subtly on hover for accessibility */
-  color: #777777;
+  color: #c54f4f;
 }
 
 /* --- profile layout ------------------------------------------------------ */
